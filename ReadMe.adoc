@@ -7,13 +7,9 @@
 = Project: {HEAT LOCK}
 
 IoT Heat Lock is a system of a smart lock that locks and unlocks based on human presence in a certain room. 
-Flow Chart:
-             |--------------------------------|
-             |                                |
-             v                                |
-Check human presence --yes--> (stay) unlock --|
-                   L--no--> lock ---> keypad turns on ---> is password correct? --yes--> unlock
-                                                                              L---no--> lock
+
+AMG8833 Sensor checks the presence of human in certain room by reading the temperature, if there's anything above 34C the door will (stay) unlock. If there's no one then the door will shut off or locked. 
+If a person wants to come in they have to use the keypad and enter the correct password to unlock the door. 
 
 == Step 1: Installation
 
